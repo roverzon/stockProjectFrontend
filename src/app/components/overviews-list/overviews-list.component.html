@@ -1,0 +1,25 @@
+<div class="col-md-12">
+    <h4>Overview List</h4>
+    <table  class="table table-responsive-lg ">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">代号</th>
+                <th scope="col">板块</th>
+                <th scope="col">行业</th>
+                <th scope="col">市值</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr
+                *ngFor="let overview of overviews; let i = index"
+            >
+                <th scope="row" > {{ overview.id }} </th>
+                <td> {{ overview.symbol }} </td>
+                <td> {{ overview.sector }} </td>
+                <td> {{ overview.industry }} </td>
+                <td> {{ overview.market_capitalization }} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
